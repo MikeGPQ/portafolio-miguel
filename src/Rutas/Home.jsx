@@ -2,7 +2,7 @@ export function Home() {
     return (
         <div style={{ textAlign: "center", padding: "3rem 1rem", maxWidth: "800px", margin: "0 auto", background: "#FFFFFF" }}>
             <h1 style={{ color: "#060709", fontSize: "2.5rem", marginBottom: "1rem", fontWeight: "700" }}>
-                Miguel Enrique Garcia Parra Quevedo
+                Miguel Enrique Garc&iacute;a Parra Quevedo
             </h1>
 
             <div style={{ margin: "2rem 0" }}>
@@ -17,7 +17,7 @@ export function Home() {
                 <a href="https://github.com/MikeGPQ" style={{ textDecoration: "none" }}>
                     <button style={{ background: "#060709", color: "#FFFFFF", border: "none", padding: "0.8rem 1.5rem", borderRadius: "50px", cursor: "pointer", fontWeight: "600", fontSize: "1rem", transition: "all 0.3s ease", ":hover": { background: "#F9AA8C", transform: "translateY(-2px)" } }}>Github</button>
                 </a>
-                <a href="https://mx.linkedin.com/in/miguel-garcía-parra-66b733294" style={{ textDecoration: "none" }}>
+                <a href="https://mx.linkedin.com/in/miguel-garc\u00eda-parra-66b733294" style={{ textDecoration: "none" }}>
                     <button style={{ background: "#060709", color: "#FFFFFF", border: "none", padding: "0.8rem 1.5rem", borderRadius: "50px", cursor: "pointer", fontWeight: "600", fontSize: "1rem", transition: "all 0.3s ease", ":hover": { background: "#F9AA8C", transform: "translateY(-2px)" } }}>LinkedIn</button>
                 </a>
             </div>
