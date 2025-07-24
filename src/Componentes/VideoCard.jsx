@@ -18,7 +18,7 @@
             <div style={{ position: "relative", cursor: "pointer" }} onClick={openVideo}>
                 <img
                     src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png"
-                    at="Prueba"
+                    alt="Miniatura de video de YouTube"
                     style={{
                         width: "100%",
                         height: "200px",
