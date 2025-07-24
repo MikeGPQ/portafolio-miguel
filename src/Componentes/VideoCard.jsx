@@ -1,4 +1,4 @@
-﻿export function VideoCard({ videoData }) {
+export function VideoCard({ videoData }) {
     const openVideo = () => {
         window.open(`https://youtube.com/watch?v=${videoData.id}`, "_blank", "noopener,noreferrer");
     };
@@ -43,7 +43,7 @@
                     fontSize: "1.5rem",
                     transition: "all 0.3s ease"
                 }}>
-                    ▶
+                    ?
                 </div>
             </div>
 
