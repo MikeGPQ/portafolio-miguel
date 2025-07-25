@@ -19,6 +19,12 @@ export function DevLogs() {
             title: "React + Firestore Delete-Edit",
             date: "8 jul 2025",
             tags: ["React", "Firestore"],
+        },
+        {
+            id: "YsOQsWG6j3U",
+            title: "Desarrollando Mi Portafolio Profesional con React DevLog #1",
+            date: "25 jul 2025",
+            tags: ["React", "Portafolio"],
         }
     ];
 

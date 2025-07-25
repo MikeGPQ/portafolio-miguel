@@ -1,5 +1,7 @@
 import { Tarjeta } from "../Componentes/Tarjeta";
 
+
+
 export function Sobremi() {
     return (
         <div style={{ maxWidth: "800px", margin: "2rem auto", padding: "0 1rem", background: "#FFFFFF" }}>
