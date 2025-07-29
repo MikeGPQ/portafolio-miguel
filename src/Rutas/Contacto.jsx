@@ -34,7 +34,7 @@ export function Contacto() {
             </div>
 
             <div style={{ textAlign: "center" }}>
-                <h2 style={{ color: "#060709", fontSize: "1.4rem", marginBottom: "1rem", fontWeight: "600",marginBottom: "1.5rem" }}>
+                <h2 style={{ color: "#060709", fontSize: "1.4rem", marginBottom: "1rem", fontWeight: "600"}}>
                     Encu&eacute;ntrame en redes
                 </h2>
 
