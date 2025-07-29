@@ -21,19 +21,19 @@ export function Home() {
                 </p>
 
                 <div style={{ display: "flex", gap: "1rem",  justifyContent: "center", flexWrap: "wrap", marginBottom: "2rem" }}>
-                    <a href="https://portafolio-miguel-garciaparra.netlify.app/sobre-mi" style={{ textDecoration: "none" }}>
+                    <a href="/sobre-mi" style={{ textDecoration: "none" }}>
                         <button style={{ background: "#F9AA8C", color: "#FFFFFF",  border: "none",  padding: "0.8rem 1.5rem",   borderRadius: "50px",cursor: "pointer", fontWeight: "600",  fontSize: "1rem",transition: "all 0.3s ease" }}>
                             Con&oacute;ceme
                         </button>
                     </a>
 
-                    <a href="https://portafolio-miguel-garciaparra.netlify.app/proyectos" style={{ textDecoration: "none" }}>
+                    <a href="/proyectos" style={{ textDecoration: "none" }}>
                         <button style={{ background: "#060709", color: "#FFFFFF", border: "none",padding: "0.8rem 1.5rem",  borderRadius: "50px", cursor: "pointer", fontWeight: "600",  fontSize: "1rem", transition: "all 0.3s ease",}}>
                             Ver Proyectos
                         </button>
                     </a>
 
-                    <a href="https://portafolio-miguel-garciaparra.netlify.app/contacto" style={{ textDecoration: "none" }}>
+                    <a href="/contacto" style={{ textDecoration: "none" }}>
                         <button style={{   background: "transparent",   color: "#060709",   border: "2px solid #060709",  padding: "0.8rem 1.5rem",   borderRadius: "50px",  cursor: "pointer",  fontWeight: "600",  fontSize: "1rem",  transition: "all 0.3s ease",  }}>
                             Contactar
                         </button>
