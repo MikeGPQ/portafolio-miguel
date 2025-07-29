@@ -3,24 +3,6 @@ import { VideoCard } from "../Componentes/VideoCard";
 export function DevLogs() {
     const videos = [
         {
-            id: "n2exlSpNMbg", 
-            title: "React + Authenticator Firestore",
-            date: "10 jun 2025",
-            tags: ["React", "Firestore"],
-        },
-        {
-            id: "5ElQ-qm3z8M",
-            title: "React + Firestore Upload Data",
-            date: "24 jun 2025",
-            tags: ["React", "Firestore"],
-        },
-        {
-            id: "Sa2-7TGkW8g",
-            title: "React + Firestore Delete-Edit",
-            date: "8 jul 2025",
-            tags: ["React", "Firestore"],
-        },
-        {
             id: "YsOQsWG6j3U",
             title: "Desarrollando Mi Portafolio Profesional con React DevLog #1",
             date: "25 jul 2025",

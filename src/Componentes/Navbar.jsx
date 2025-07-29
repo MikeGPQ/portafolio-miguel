@@ -2,6 +2,8 @@ import { Routes, Route, NavLink } from "react-router-dom";
 import { Home } from "../Rutas/Home";
 import { Sobremi } from "../Rutas/sobre-mi";
 import { DevLogs } from "../Rutas/DevLogs";
+import { Contacto } from "../Rutas/Contacto";
+import { Proyectos } from "../Rutas/Proyectos";
 
 export function Navbar() {
     const rutas = [
@@ -41,9 +43,9 @@ export function Navbar() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/sobre-mi" element={<Sobremi />} />
-                    <Route path="/proyectos" element={<h1 style={{ color: "#060709" }}>Proyectos</h1>} />
+                    <Route path="/proyectos" element={<Proyectos />} />
                     <Route path="/devlogs" element={<DevLogs />} />
-                    <Route path="/contacto" element={<h1 style={{ color: "#060709" }}>Contacto</h1>} />
+                    <Route path="/contacto" element={<Contacto />} />
                 </Routes>
             </div>
         </div>

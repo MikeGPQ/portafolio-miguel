@@ -43,7 +43,7 @@ export function VideoCard({ videoData }) {
                     fontSize: "1.5rem",
                     transition: "all 0.3s ease"
                 }}>
-                    ?
+                    Play
                 </div>
             </div>
 

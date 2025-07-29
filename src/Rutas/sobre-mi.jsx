@@ -1,7 +1,5 @@
 import { Tarjeta } from "../Componentes/Tarjeta";
 
-
-
 export function Sobremi() {
     return (
         <div style={{ maxWidth: "800px", margin: "2rem auto", padding: "0 1rem", background: "#FFFFFF" }}>
@@ -10,7 +8,7 @@ export function Sobremi() {
                 sections={[
                     {
                         subtitle: "Lenguajes de programaci\u00f3n",
-                        text: "C++ \u00b7 C# \u00b7 Python \u00b7 Java"
+                        text: "C++ \u00b7 C# \u00b7 Python \u00b7 JavaScript"
                     },
                     {
                         subtitle: "Herramientas",
@@ -42,11 +40,7 @@ export function Sobremi() {
                     },
                     {
                         subtitle: "Cursos",
-                        content: (
-                            <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-                                <img src="*URL_CERTIFICADO*" style={{ width: "120px", border: "2px solid #F9AA8C", borderRadius: "4px" }} alt="Certificado" />
-                            </div>
-                        )
+                        text: "Scrum esencial - 2023 \u00b7 Fundamentos esenciales de la programaci\u00f3n - 2024 \u00b7 Python esencial - 2024 "
                     }
                 ]}
             />
