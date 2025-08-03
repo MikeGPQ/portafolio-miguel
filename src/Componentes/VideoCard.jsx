@@ -10,6 +10,7 @@ export function VideoCard({ videoData }) {
             boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
             overflow: "hidden",
             transition: "transform 0.3s ease",
+            maxWidth: "100%",
             ":hover": {
                 transform: "translateY(-5px)",
                 boxShadow: "0 6px 16px rgba(0,0,0,0.15)"
@@ -21,7 +22,7 @@ export function VideoCard({ videoData }) {
                     alt="Miniatura de video de YouTube"
                     style={{
                         width: "100%",
-                        height: "200px",
+                        height: "180px",
                         objectFit: "cover",
                         borderBottom: "3px solid #F9AA8C"
                     }}
@@ -35,22 +36,22 @@ export function VideoCard({ videoData }) {
                     color: "#FFFFFF",
                     border: "none",
                     borderRadius: "50%",
-                    width: "60px",
-                    height: "60px",
+                    width: "50px",
+                    height: "50px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    fontSize: "1.5rem",
+                    fontSize: "1.2rem",
                     transition: "all 0.3s ease"
                 }}>
                     Play
                 </div>
             </div>
 
-            <div style={{ padding: "1.5rem" }}>
+            <div style={{ padding: "1.2rem" }}>
                 <h2 style={{
                     color: "#060709",
-                    fontSize: "1.4rem",
+                    fontSize: "1.2rem",
                     marginBottom: "0.5rem"
                 }}>
                     {videoData.title}
@@ -58,7 +59,7 @@ export function VideoCard({ videoData }) {
 
                 <p style={{
                     color: "#666",
-                    fontSize: "0.9rem",
+                    fontSize: "0.85rem",
                     marginBottom: "1rem"
                 }}>
                     {videoData.date}

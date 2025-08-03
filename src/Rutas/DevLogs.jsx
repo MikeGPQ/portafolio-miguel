@@ -14,7 +14,7 @@ export function DevLogs() {
             date: "29 jul 2025",
             tags: ["React", "Portafolio"],
         }
-        
+
     ];
 
     return (
@@ -26,8 +26,8 @@ export function DevLogs() {
         }}>
             <h1 style={{
                 color: "#060709",
-                fontSize: "2.5rem",
-                marginBottom: "2rem",
+                fontSize: "2rem",
+                marginBottom: "1.5rem",
                 textAlign: "center",
                 borderBottom: "3px solid #F9AA8C",
                 paddingBottom: "0.5rem"
@@ -37,8 +37,8 @@ export function DevLogs() {
 
             <div style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
-                gap: "2rem",
+                gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                gap: "1.5rem",
                 padding: "1rem"
             }}>
                 {videos.map((video) => (

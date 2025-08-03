@@ -1,9 +1,11 @@
 export function ProyectosCard({ proyectos }) {
+    const isMobile = window.innerWidth <= 768;
+
     return (
         <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
-            gap: "2rem",
+            gridTemplateColumns: `repeat(auto-fill, minmax(${isMobile ? "280px" : "350px"}, 1fr))`,
+            gap: "1.5rem",
             padding: "1rem"
         }}>
             {proyectos.map((proyecto) => (
@@ -14,11 +16,11 @@ export function ProyectosCard({ proyectos }) {
                     overflow: "hidden",
                     transition: "transform 0.3s ease"
                 }}>
-                    <div style={{ padding: "1.5rem", borderBottom: "3px solid #F9AA8C" }}>
+                    <div style={{ padding: "1.2rem", borderBottom: "3px solid #F9AA8C" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
-                            <h2 style={{ color: "#060709", fontSize: "1.4rem", margin: 0 }}>{proyecto.nombre}</h2>
+                            <h2 style={{ color: "#060709", fontSize: "1.2rem", margin: 0 }}>{proyecto.nombre}</h2>
                         </div>
-                        <p style={{ color: "#666", fontSize: "0.9rem", marginBottom: "1rem" }}>
+                        <p style={{ color: "#666", fontSize: "0.85rem", marginBottom: "1rem" }}>
                             {proyecto.descripcion}
                         </p>
 
@@ -46,7 +48,7 @@ export function ProyectosCard({ proyectos }) {
                         >
                             <div style={{
                                 position: "relative",
-                                height: "200px",
+                                height: "180px",
                                 background: `linear-gradient(135deg, #F9AA8C, #060709)`,
                                 display: "flex",
                                 alignItems: "center",
@@ -59,7 +61,7 @@ export function ProyectosCard({ proyectos }) {
                                     padding: "0.8rem 1.5rem",
                                     borderRadius: "50px",
                                     fontWeight: "600",
-                                    fontSize: "1rem"
+                                    fontSize: "0.95rem"
                                 }}>
                                     Ver Proyecto
                                 </span>
@@ -79,7 +81,7 @@ export function ProyectosCard({ proyectos }) {
                                 alt={proyecto.nombre}
                                 style={{
                                     width: "100%",
-                                    height: "200px",
+                                    height: "180px",
                                     objectFit: "cover",
                                     display: "block"
                                 }}
@@ -91,7 +93,7 @@ export function ProyectosCard({ proyectos }) {
                         <div
                             style={{
                                 position: "relative",
-                                height: "200px",
+                                height: "180px",
                                 background: "#060709",
                                 cursor: "pointer"
                             }}
@@ -106,12 +108,12 @@ export function ProyectosCard({ proyectos }) {
                                 color: "#FFFFFF",
                                 border: "none",
                                 borderRadius: "50%",
-                                width: "60px",
-                                height: "60px",
+                                width: "50px",
+                                height: "50px",
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "center",
-                                fontSize: "1.5rem"
+                                fontSize: "1.2rem"
                             }}>
                                 ?
                             </div>

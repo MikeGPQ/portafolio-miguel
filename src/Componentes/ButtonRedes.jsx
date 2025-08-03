@@ -12,6 +12,7 @@ export function ButtonRedes({ url, texto }) {
                 fontSize: "1rem",
                 transition: "all 0.3s ease",
                 minWidth: "120px",
+                minHeight: "48px",
                 ":hover": {
                     background: "#F9AA8C",
                     transform: "translateY(-2px)"
