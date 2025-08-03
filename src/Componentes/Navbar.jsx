@@ -37,7 +37,7 @@ export function Navbar() {
                         <div
                             onClick={() => setMenuOpen(!menuOpen)}
                             style={{ cursor: "pointer", color: "#CEBFC0", fontSize: "1.5rem", padding: "0.5rem" }} >
-                            ?
+                            ...
                         </div>
                     ) : (
                         <div style={{ display: "flex", gap: "1rem" }}>

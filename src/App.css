@@ -60,7 +60,6 @@
     }
 }
 
-/* Responsive utility classes */
 @media (max-width: 768px) {
     .mobile-column {
         flex-direction: column !important;
