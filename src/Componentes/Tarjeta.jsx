@@ -62,17 +62,18 @@ export function Tarjeta({ title, sections }) {
                         <ul style={listStyle}>
                             {section.content.map((item, i) => (
                                 <li key={i} style={listItemStyle}>
-                                    {item.text}
-                                    {item.link && (
-                                        <a 
-                                            href={item.link.url} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            style={linkStyle}
-                                        >
-                                            {item.link.text}
-                                        </a>
-                                    )}
+                                    {item.link? (
+                                    <a 
+                                        href={item.link.url} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        style={linkStyle}
+                                    >
+                                        {item.text}
+                                    </a>
+                                ) 
+                                   : (item.text)}   
+
                                 </li>
                             ))}
                         </ul>
