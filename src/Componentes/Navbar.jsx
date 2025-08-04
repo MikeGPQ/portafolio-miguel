@@ -26,29 +26,17 @@ export function Navbar() {
     }, []);
 
     return (
-        <div style={{ fontFamily: "'Segoe UI', sans-serif", minHeight: "100vh", background: "#FFFFFF" }}>
-            <nav style={{  background: "#060709",  padding: "1rem 0",  boxShadow: "0 2px 10px rgba(0,0,0,0.1)", position: "relative" }}>
-                <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 1rem",  maxWidth: "1200px",  margin: "0 auto"  }}>
-                    <div style={{ color: "#CEBFC0", fontWeight: "600", fontSize: "1.2rem" }}>
-                        Portfolio
-                    </div>
+        <div style={{ fontFamily: "'Segoe UI', sans-serif", minHeight: "100vh", background: "#FFFFFF", paddingTop: "70px" }}>
+            <nav style={{ background: "#060709", padding: "1rem 0", boxShadow: "0 2px 10px rgba(0,0,0,0.1)", position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000 }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: "1200px", margin: "0 auto", padding: "0 1rem" }}>
+                    <div style={{ color: "#CEBFC0", fontWeight: "600", fontSize: "1.2rem" }}>Portafolio</div>
 
                     {isMobile ? (
-                        <div
-                            onClick={() => setMenuOpen(!menuOpen)}
-                            style={{ cursor: "pointer", color: "#CEBFC0", fontSize: "1.5rem", padding: "0.5rem" }} >
-                            ...
-                        </div>
+                        <div onClick={() => setMenuOpen(!menuOpen)} style={{ cursor: "pointer", color: "#CEBFC0", fontSize: "1.5rem", padding: "0.5rem" }}>...</div>
                     ) : (
                         <div style={{ display: "flex", gap: "1rem" }}>
                             {rutas.map((link) => (
-                                <NavLink
-                                    key={link.name}
-                                    to={link.path}
-                                    style={({ isActive }) => ({color: isActive ? "#F9AA8C" : "#CEBFC0", textDecoration: "none",  fontWeight: "600", fontSize: "1.1rem",padding: "0.5rem 1rem",   borderRadius: "4px", transition: "all 0.3s ease",
-                                        ":hover": { color: "#F9AA8C" }
-                                    })}
-                                >
+                                <NavLink key={link.name} to={link.path} style={({ isActive }) => ({ color: isActive ? "#F9AA8C" : "#CEBFC0", textDecoration: "none", fontWeight: "600", fontSize: "1.1rem", padding: "0.5rem 1rem", borderRadius: "4px", transition: "all 0.3s ease", ":hover": { color: "#F9AA8C" } })}>
                                     {link.name}
                                 </NavLink>
                             ))}
@@ -57,20 +45,10 @@ export function Navbar() {
                 </div>
 
                 {isMobile && menuOpen && (
-                    <div style={{ background: "#060709", padding: "1rem",  position: "absolute", top: "100%",  left: 0, right: 0, zIndex: 1000,  boxShadow: "0 4px 10px rgba(0,0,0,0.2)" }}>
+                    <div style={{ background: "#060709", padding: "1rem", position: "absolute", top: "100%", left: 0, right: 0, zIndex: 1000, boxShadow: "0 4px 10px rgba(0,0,0,0.2)" }}>
                         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                             {rutas.map((link) => (
-                                <NavLink
-                                    key={link.name}
-                                    to={link.path}
-                                    onClick={() => setMenuOpen(false)}
-                                    style={({ isActive }) => ({ color: isActive ? "#F9AA8C" : "#CEBFC0", textDecoration: "none", fontWeight: "600", fontSize: "1.1rem", padding: "0.8rem 1rem", borderRadius: "4px", transition: "all 0.3s ease",
-                                        ":hover": {
-                                            color: "#F9AA8C",
-                                            background: "rgba(249, 170, 140, 0.1)"
-                                        }
-                                    })}
-                                >
+                                <NavLink key={link.name} to={link.path} onClick={() => setMenuOpen(false)} style={({ isActive }) => ({ color: isActive ? "#F9AA8C" : "#CEBFC0", textDecoration: "none", fontWeight: "600", fontSize: "1.1rem", padding: "0.8rem 1rem", borderRadius: "4px", transition: "all 0.3s ease", ":hover": { color: "#F9AA8C", background: "rgba(249, 170, 140, 0.1)" } })}>
                                     {link.name}
                                 </NavLink>
                             ))}
@@ -79,7 +57,7 @@ export function Navbar() {
                 )}
             </nav>
 
-            <div style={{ maxWidth: "1200px", margin: "2rem auto", padding: "0 1rem" }}>
+            <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 1rem" }}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/sobre-mi" element={<Sobremi />} />

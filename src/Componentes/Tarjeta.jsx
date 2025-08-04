@@ -31,6 +31,25 @@ export function Tarjeta({ title, sections }) {
         fontSize: isMobile ? "0.95rem" : "1rem"
     };
 
+    const listStyle = {
+        paddingLeft: "1.5rem",
+        margin: "0.5rem 0"
+    };
+
+    const listItemStyle = {
+        marginBottom: "0.5rem"
+    };
+
+    const linkStyle = {
+        color: "#1a73e8",
+        textDecoration: "none",
+        fontWeight: "500",
+        marginLeft: "0.3rem",
+        "&:hover": {
+            textDecoration: "underline"
+        }
+    };
+
     return (
         <div style={sectionStyle}>
             <h1 style={titleStyle}>{title}</h1>
@@ -38,7 +57,28 @@ export function Tarjeta({ title, sections }) {
             {sections.map((section, index) => (
                 <div key={index}>
                     <h2 style={subtitleStyle}>{section.subtitle}</h2>
-                    <p style={textStyle}>{section.text}</p>
+                    
+                    {Array.isArray(section.content) ? (
+                        <ul style={listStyle}>
+                            {section.content.map((item, i) => (
+                                <li key={i} style={listItemStyle}>
+                                    {item.text}
+                                    {item.link && (
+                                        <a 
+                                            href={item.link.url} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            style={linkStyle}
+                                        >
+                                            {item.link.text}
+                                        </a>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p style={textStyle}>{section.content}</p>
+                    )}
                 </div>
             ))}
         </div>

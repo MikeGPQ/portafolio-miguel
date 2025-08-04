@@ -12,12 +12,24 @@ export function Sobremi() {
                 title="Competencias"
                 sections={[
                     {
-                        subtitle: "Lenguajes de programaci\u00f3n",
-                        text: "C++ \u00b7 C# \u00b7 Python \u00b7 JavaScript"
+                        subtitle: "Lenguajes de programación",
+                        content: [
+                            { text: "C++" },
+                            { text: "Python" },
+                            { text: "JavaScript" }
+                        ]
                     },
                     {
                         subtitle: "Herramientas",
-                        text: "Visual Studio \u00b7 Android Studio \u00b7 Unity \u00b7 Unreal Engine \u00b7 Adobe Premier \u00b7 Photoshop \u00b7 Blender"
+                        content: [
+                            { text: "Visual Studio" },
+                            { text: "Android Studio" },
+                            { text: "Unity" },
+                            { text: "Unreal Engine" },
+                            { text: "Adobe Premier" },
+                            { text: "Photoshop" },
+                            {text: "Blender"}
+                        ]
                     }
                 ]}
             />
@@ -27,25 +39,56 @@ export function Sobremi() {
                 sections={[
                     {
                         subtitle: "Empresas y Escuelas",
-                        text: "Maestro de Alice para ni\u00f1os - 2019 [An\u00e1huac Mayab]\nQA de contenido multimedia - 2022-2024 [ScaleAI]\nAsistente de ventas y contadur\u00eda - 2025- [EICSA]"
+                        content: [
+                            { text: "Maestro de Alice para niños - 2019 [Anáhuac Mayab]" },
+                            { text: "QA de contenido multimedia - 2022-2024 [ScaleAI]" },
+                            { text: "Asistente de ventas y contaduría - 2025- [EICSA]" }
+                        ]
                     },
                     {
                         subtitle: "Freelance",
-                        text: "Maestro de Unity para ni\u00f1os - 2020"
+                        content: [
+                            { text: "Maestro de Unity para niños - 2020" }
+                        ]
                     }
                 ]}
             />
 
             <Tarjeta
-                title="Formaci&oacute;n"
+                title="Formación"
                 sections={[
                     {
                         subtitle: "Escuelas",
-                        text: "Estudiante de Ingenier\u00eda en Animaci\u00f3n Digital An\u00e1huac Mayab 2018-2020\nEstudiante de Ingenier\u00eda en Sistemas UNID 2023-Presente"
+                        content: [
+                            { text: "Estudiante de Ingeniería en Animación Digital Anáhuac Mayab 2018-2020" },
+                            { text: "Estudiante de Ingeniería en Sistemas UNID 2023-Presente" }
+                        ]
                     },
                     {
                         subtitle: "Cursos",
-                        text: "Scrum esencial - 2023 \u00b7 Fundamentos esenciales de la programaci\u00f3n - 2024 \u00b7 Python esencial - 2024 "
+                        content: [
+                            { 
+                                text: "Scrum esencial - 2023",
+                                link: {
+                                    text: "(Ver certificado)",
+                                    url: "https://www.linkedin.com/learning/certificates/6017efb568d9bfc7c363a9df28b3c1a6ebf085d00909f826b76e319c88841e82?trk=share_certificate"
+                                }
+                            },
+                            { 
+                                text: "Fundamentos esenciales de la programación - 2024",
+                                link: {
+                                    text: "(Ver certificado)",
+                                    url: "https://www.linkedin.com/learning/certificates/7f76e5746b15be93a0d5bc9e553e06727631a953121a7693f8c8beed7128a590?trk=share_certificate"
+                                }
+                            },
+                            { 
+                                text: "Python esencial - 2024",
+                                link: {
+                                    text: "(Ver certificado)",
+                                    url: "https://www.linkedin.com/learning/certificates/c8769ed753282a8e3f7583ac029666e62d1f4b764580436d18d786a8277a0fcc?trk=share_certificate"
+                                }
+                            }
+                        ]
                     }
                 ]}
             />
@@ -55,11 +98,19 @@ export function Sobremi() {
                 sections={[
                     {
                         subtitle: "Hobbies",
-                        text: "Dungeons and Dragons \u00b7 Leer fantas\u00eda \u00b7 Magic the Gathering TCG \u00b7 Videojuegos"
+                        content: [
+                            { text: "Dungeons and Dragons" },
+                            { text: "Leer fantasía" },
+                            { text: "Magic the Gathering TCG" },
+                            { text: "Videojuegos" }
+                        ]
                     },
                     {
                         subtitle: "Ejercicio",
-                        text: "Correr 5km \u00b7 Pesas"
+                        content: [
+                            { text: "Correr 5km" },
+                            { text: "Pesas" }
+                        ]
                     }
                 ]}
             />

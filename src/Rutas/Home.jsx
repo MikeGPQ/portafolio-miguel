@@ -77,7 +77,7 @@ export function Home() {
             <div style={{ margin: isMobile ? "2rem 0" : "4rem 0" }}>
                 <div style={{ display: "flex",justifyContent: "space-between",  alignItems: "center",  marginBottom: "1.5rem",flexWrap: "wrap",  gap: "1rem" }}>
                     <h2 style={{ color: "#060709", fontSize: isMobile ? "1.5rem" : "2rem",  borderBottom: "3px solid #F9AA8C",  paddingBottom: "0.5rem",  flex: 1,  minWidth: "300px"}}>
-                        Quieres saber c&oacute;mo hice esta p&aacute;gina? Revisa mi DevLog
+                        &iquest;Quieres saber c&oacute;mo hice esta p&aacute;gina? Revisa mi DevLog
                     </h2>
                     <a href="/devlogs" style={{  color: "#F9AA8C",textDecoration: "none", fontWeight: "600", fontSize: "1.1rem", transition: "all 0.2s ease", whiteSpace: "nowrap" }}>
                         Ver todos
