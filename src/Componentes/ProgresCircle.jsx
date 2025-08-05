@@ -15,7 +15,8 @@ export function ProgresCircle({progressItems}){
     switch(type) {
       case "project": return "#8CFAE8"; 
       case "curso": return "#FAF88C";  
-      case "???": return "#BC8CFA";        
+      case "???": return "#BC8CFA";  
+      default: return "#BC8CFA"      
     }
 
     
