@@ -4,9 +4,18 @@ export function Proyectos() {
         {
             nombre: "Human Resources",
             tipo: "web",
-            enlace: "https://hrmegpq.netlify.app/",
+            proyecto: "https://hrmegpq.netlify.app/",
+            repositorio: "https://github.com/MikeGPQ/HR",
             descripcion: "Sistema de gesti\u00f3n de recursos humanos desarrollado con React y Firebase",
             tags: ["React", "Firebase", "HR"]
+        },
+        {
+            nombre: "Chatbot",
+            tipo: "web",
+            proyecto: "https://chatbot-mikegpq.netlify.app/",
+            repositorio: "https://github.com/MikeGPQ/Chatbot",
+            descripcion: "Chatbot potenciado por Gemini con Google Ai Studio desarrollado con React",
+            tags: ["React", "Google Ai Studio", "Support Chat"]
         }
     ];
 

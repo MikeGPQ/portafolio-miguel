@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { VideoCard } from "../Componentes/VideoCard";
+import { ProgresCircle } from '../Componentes/ProgresCircle';
 
 const video =
 {
@@ -8,6 +9,25 @@ const video =
     date: "25 jul 2025",
     tags: ["React", "Portafolio"]
 };
+
+const progressItems = [
+    { 
+      percentage: 45, 
+      title: "Chatbot",
+      type: "project", 
+      url:"https://chatbot-mikegpq.netlify.app/"
+    },
+    { 
+      percentage: 95, 
+      title: "Portafolio",
+      type: "project"
+    },
+    { 
+      percentage: 5, 
+      title: "Google Gemini for Developers (2024)",
+      type: "curso"
+    }
+  ];
 
 export function Home() {
     const [isMobile, setIsMobile] = useState(false);
@@ -20,7 +40,7 @@ export function Home() {
     }, []);
 
     return (
-        <div style={{  maxWidth: "1200px", margin: "0 auto", padding: "2rem 1rem", background: "#FFFFFF" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "2rem 1rem", background: "#FFFFFF" }}>
             <div style={{ textAlign: "center",  padding: isMobile ? "1.5rem 1rem" : "3rem 1rem",  display: "flex",  flexDirection: "column", alignItems: "center" }}>
                 <h1 style={{color: "#060709",  fontSize: isMobile ? "1.8rem" : "2.5rem", marginBottom: "1rem",  fontWeight: "700",  lineHeight: "1.2" }}>
                     Miguel Enrique Garc&iacute;a Parra Quevedo
@@ -51,6 +71,30 @@ export function Home() {
                 </div>
             </div>
 
+                    <div style={{ 
+                margin: isMobile ? "2rem 0" : "4rem 0", 
+                padding: isMobile ? "1rem" : "2rem", 
+                background: "#F8F8F8", 
+                borderRadius: "8px", 
+                boxShadow: "0 2px 10px rgba(0,0,0,0.05)" 
+            }}>
+                <h2 style={{ 
+                color: "#060709", 
+                fontSize: isMobile ? "1.5rem" : "2rem", 
+                textAlign: "center", 
+                marginBottom: "1.5rem", 
+                borderBottom: "3px solid #F9AA8C", 
+                paddingBottom: "0.5rem", 
+                display: "inline-block", 
+                paddingLeft: "1rem", 
+                paddingRight: "1rem" 
+                }}>
+                Progreso
+                </h2>
+                
+                <ProgresCircle progressItems={progressItems}/>
+            </div>
+
             <div style={{ margin: isMobile ? "2rem 0" : "4rem 0", padding: isMobile ? "1rem" : "2rem", background: "#F8F8F8", borderRadius: "8px", boxShadow: "0 2px 10px rgba(0,0,0,0.05)" }}>
                 <h2 style={{ color: "#060709", fontSize: isMobile ? "1.5rem" : "2rem", textAlign: "center",  marginBottom: "1.5rem", borderBottom: "3px solid #F9AA8C", paddingBottom: "0.5rem", display: "inline-block",  paddingLeft: "1rem", paddingRight: "1rem" }}>
                     Habilidades Destacadas
@@ -59,15 +103,15 @@ export function Home() {
                 <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(3, 1fr)",   gap: "1rem", maxWidth: "800px",  margin: "0 auto"
                 }}>
                     {[
-                        { name: "JavaScript", color: "#F0DB4F" },
-                        { name: "React", color: "#61DAFB" },
-                        { name: "Python", color: "#3776AB" },
-                        { name: "Photoshop", color: "#00599C" },
-                        { name: "Unity", color: "#000000" },
-                        { name: "Blender", color: "#EA7600" }
+                        { name: "JavaScript"},
+                        { name: "React"},
+                        { name: "Python"},
+                        { name: "Photoshop"},
+                        { name: "Unity"},
+                        { name: "Blender"}
                     ].map((skill, index) => (
-                        <div key={index} style={{ background: "#FFFFFF", padding: "1rem",  borderRadius: "30px",  display: "flex", alignItems: "center", gap: "0.5rem",  boxShadow: "0 2px 5px rgba(0,0,0,0.1)",  borderLeft: `4px solid ${skill.color}`  }}>
-                            <span style={{ width: "12px", height: "12px", borderRadius: "50%", background: skill.color }}></span>
+                        <div key={index} style={{ background: "#FFFFFF", padding: "1rem",  borderRadius: "30px",  display: "flex", alignItems: "center", gap: "0.5rem",  boxShadow: "0 2px 5px rgba(0,0,0,0.1)",  borderLeft: `4px solid ${"#F9AA8C"}`  }}>
+                            <span style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#F9AA8C" }}></span>
                             <span style={{ fontWeight: "600", color: "#060709" }}>{skill.name}</span>
                         </div>
                     ))}

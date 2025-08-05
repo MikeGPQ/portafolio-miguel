@@ -40,33 +40,61 @@ export function ProyectosCard({ proyectos }) {
                     </div>
 
                     {proyecto.tipo === "web" && (
-                        <a
-                            href={proyecto.enlace}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ textDecoration: "none" }}
-                        >
-                            <div style={{
-                                position: "relative",
-                                height: "180px",
-                                background: `linear-gradient(135deg, #F9AA8C, #060709)`,
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                cursor: "pointer"
+                        <div style={{
+                            position: "relative",
+                            height: "180px",
+                            background: `linear-gradient(135deg, #F9AA8C, #060709)`,
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: "1rem"  
                             }}>
-                                <span style={{
-                                    background: "rgba(255, 255, 255, 0.8)",
-                                    color: "#060709",
-                                    padding: "0.8rem 1.5rem",
-                                    borderRadius: "50px",
-                                    fontWeight: "600",
-                                    fontSize: "0.95rem"
+                            
+                            <a
+                                href={proyecto.proyecto}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none" }}
+                            >
+                                <div style={{
+                                background: "rgba(255, 255, 255, 0.8)",
+                                color: "#060709",
+                                padding: "0.8rem 1.5rem",
+                                borderRadius: "50px",
+                                fontWeight: "600",
+                                fontSize: "0.95rem",
+                                cursor: "pointer",
+                                textAlign: "center"
                                 }}>
-                                    Ver Proyecto
-                                </span>
+                                Ver Ejecutable
+                                </div>
+                            </a>
+
+                            
+                            <a
+                                href={proyecto.repositorio}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none" }}
+                            >
+                                <div style={{
+                                background: "rgba(255, 255, 255, 0.8)",
+                                color: "#060709",
+                                padding: "0.8rem 1.5rem",
+                                borderRadius: "50px",
+                                fontWeight: "600",
+                                fontSize: "0.95rem",
+                                cursor: "pointer",
+                                textAlign: "center"
+                                }}>
+                                Ver Repositorio
+                                </div>
+                            </a>
                             </div>
-                        </a>
+
+                        
+
+                        
                     )}
 
                     {proyecto.tipo === "imagen" && (
