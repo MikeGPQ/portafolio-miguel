@@ -12,7 +12,7 @@ const video =
 
 const progressItems = [
     { 
-      percentage: 55, 
+      percentage: 80, 
       title: "Chatbot",
       type: "project", 
       url:"https://chatbot-mikegpq.netlify.app/"
@@ -92,6 +92,10 @@ export function Home() {
                 }}>
                 Progreso
                 </h2>
+
+                <p style={{  textAlign: "left",  fontSize: "0.9rem",  color: "#666",  marginTop: "0.5rem" }}>
+                    Azul - proyectos / Amarillo - cursos
+                </p>
                 
                 <ProgresCircle progressItems={progressItems}/>
             </div>

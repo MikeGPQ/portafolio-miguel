@@ -9,7 +9,7 @@ export function DevLogs() {
             tags: ["React", "Portafolio"],
         },
         {
-            id: "YsOQsWG6j3U",
+            id: "wLrtP_gw1wM",
             title: "Desarrollando Mi Portafolio Profesional con React DevLog #2",
             date: "29 jul 2025",
             tags: ["React", "Portafolio"],
