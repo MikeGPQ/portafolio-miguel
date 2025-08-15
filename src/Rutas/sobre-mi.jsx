@@ -87,7 +87,15 @@ export function Sobremi() {
                                     text: "(Ver certificado)",
                                     url: "https://www.linkedin.com/learning/certificates/c8769ed753282a8e3f7583ac029666e62d1f4b764580436d18d786a8277a0fcc?trk=share_certificate"
                                 }
+                            },
+                            { 
+                                text: "Learning Python - 2025",
+                                link: {
+                                    text: "(Ver certificado)",
+                                    url: "https://www.linkedin.com/learning/certificates/0d46b4d4af764dc24df11854383abc10c9d3d55ac98ae8911a8b99d28aa0a5df?trk=share_certificate"
+                                }
                             }
+
                         ]
                     }
                 ]}

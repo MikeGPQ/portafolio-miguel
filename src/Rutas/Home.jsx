@@ -16,12 +16,11 @@ const progressItems = [
       title: "Chatbot",
       type: "project", 
       url:"https://chatbot-mikegpq.netlify.app/"
-    },
-    { 
-      percentage: 61, 
-      title: "Learning Python By: Joe Marini",
-      type: "curso",
-      url:"https://www.linkedin.com/learning/learning-python-25309312?u=89909618"
+    },{ 
+      percentage: 1, 
+      title: "Advanced Python: Top Tools for Data Science and Engineering",
+      type: "curso", 
+      url:"https://www.linkedin.com/learning-login/share?account=89909618&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fadvanced-python-top-tools-for-data-science-and-engineering%3Ftrk%3Dshare_ent_url%26shareId%3DRxArS7XVRiecXFgcHgY3xw%253D%253D"
     }
   ];
 
