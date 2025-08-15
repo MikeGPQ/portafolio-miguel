@@ -16,7 +16,7 @@ const progressItems = [
       title: "Chatbot",
       type: "project", 
       url:"https://chatbot-mikegpq.netlify.app/"
-    }
+    },
     { 
       percentage: 61, 
       title: "Learning Python By: Joe Marini",
