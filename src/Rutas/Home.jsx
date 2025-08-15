@@ -16,17 +16,12 @@ const progressItems = [
       title: "Chatbot",
       type: "project", 
       url:"https://chatbot-mikegpq.netlify.app/"
-    },
+    }
     { 
-      percentage: 95, 
-      title: "Portafolio",
-      type: "project"
-    },
-    { 
-      percentage: 5, 
-      title: "Google Gemini for Developers (2024)",
+      percentage: 61, 
+      title: "Learning Python By: Joe Marini",
       type: "curso",
-      url:"https://www.linkedin.com/learning-login/share?account=89909618&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fgoogle-gemini-for-developers-2024-25833289%3Ftrk%3Dshare_ent_url%26shareId%3DJYX18v86RXaFgy8Up607Bw%253D%253D"
+      url:"https://www.linkedin.com/learning/learning-python-25309312?u=89909618"
     }
   ];
 
