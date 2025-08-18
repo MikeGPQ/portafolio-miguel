@@ -17,13 +17,19 @@ const progressItems = [
       type: "project", 
       url:"https://chatbot-mikegpq.netlify.app/"
     },{ 
-      percentage: 1, 
+      percentage: 25, 
       title: "Advanced Python: Top Tools for Data Science and Engineering",
       type: "curso", 
       url:"https://www.linkedin.com/learning-login/share?account=89909618&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fadvanced-python-top-tools-for-data-science-and-engineering%3Ftrk%3Dshare_ent_url%26shareId%3DRxArS7XVRiecXFgcHgY3xw%253D%253D"
+    },{ 
+      percentage: 20, 
+      title: "Pandas Python Library",
+      type: "project", 
+      url:"https://pandas-testing.onrender.com"
     }
   ];
 
+  
 export function Home() {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -107,7 +113,8 @@ export function Home() {
                         { name: "Python"},
                         { name: "Photoshop"},
                         { name: "Unity"},
-                        { name: "Blender"}
+                        { name: "Blender"},
+                        {name: "HTML"}
                     ].map((skill, index) => (
                         <div key={index} style={{ background: "#FFFFFF", padding: "1rem",  borderRadius: "30px",  display: "flex", alignItems: "center", gap: "0.5rem",  boxShadow: "0 2px 5px rgba(0,0,0,0.1)",  borderLeft: `4px solid ${"#F9AA8C"}`  }}>
                             <span style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#F9AA8C" }}></span>

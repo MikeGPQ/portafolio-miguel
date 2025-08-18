@@ -16,6 +16,14 @@ export function Proyectos() {
             repositorio: "https://github.com/MikeGPQ/Chatbot",
             descripcion: "Chatbot potenciado por Gemini con Google Ai Studio desarrollado con React",
             tags: ["React", "Google Ai Studio", "Support Chat"]
+        },
+        {
+            nombre: "Pandas Python Library",
+            tipo: "web",
+            proyecto: "https://pandas-testing.onrender.com",
+            repositorio: "https://github.com/MikeGPQ/Pandas_Testing",
+            descripcion: "Proyecto personal para probar la libreria Pandas para manejo de data",
+            tags: ["Flask", "Python", "HTML"]
         }
     ];
 
