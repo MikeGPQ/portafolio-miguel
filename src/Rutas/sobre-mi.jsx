@@ -94,8 +94,14 @@ export function Sobremi() {
                                     text: "(Ver certificado)",
                                     url: "https://www.linkedin.com/learning/certificates/0d46b4d4af764dc24df11854383abc10c9d3d55ac98ae8911a8b99d28aa0a5df?trk=share_certificate"
                                 }
+                            },
+                            { 
+                                text: "Advanced Python: Top Tools for Data Science and Engineering - 2025",
+                                link: {
+                                    text: "(Ver certificado)",
+                                    url: "https://www.linkedin.com/learning/certificates/394b2c2368de3d36670c8d3dea1ec968a423e6279b3a82e1410b5c68ebe62a54?trk=share_certificate"
+                                }
                             }
-
                         ]
                     }
                 ]}
