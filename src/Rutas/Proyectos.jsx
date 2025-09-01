@@ -24,6 +24,13 @@ export function Proyectos() {
             repositorio: "https://github.com/MikeGPQ/Pandas_Testing",
             descripcion: "Proyecto personal para probar la libreria Pandas para manejo de data",
             tags: ["Flask", "Python", "HTML"]
+        },{ 
+            nombre: "Polars + Matplotlib: Showing Big Data",
+            tipo: "web",
+            proyecto: "https://polarsgraphs.onrender.com",
+            repositorio: "https://github.com/MikeGPQ/PolarsGraphs",
+            descripcion: "Proyecto personal una pagina sencilla para probar Polars, Matplotlib y Faker",
+            tags: ["Flask", "Python", "HTML", "Matplotlib"]
         }
     ];
 

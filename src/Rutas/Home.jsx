@@ -16,11 +16,6 @@ const progressItems = [
       title: "Chatbot",
       type: "project", 
       url:"https://chatbot-mikegpq.netlify.app/"
-    },{ 
-      percentage: 80, 
-      title: "Polars + Matplotlib: Showing Big Data",
-      type: "project",
-      url: "https://polarsgraphs.onrender.com"
     }
   ];
 
