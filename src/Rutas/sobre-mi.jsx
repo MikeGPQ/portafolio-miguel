@@ -68,21 +68,21 @@ export function Sobremi() {
                         subtitle: "Cursos",
                         content: [
                             { 
-                                text: "Scrum esencial - 2023",
-                                link: {
-                                    text: "(Ver certificado)",
-                                    url: "https://www.linkedin.com/learning/certificates/6017efb568d9bfc7c363a9df28b3c1a6ebf085d00909f826b76e319c88841e82?trk=share_certificate"
-                                }
-                            },
-                            { 
-                                text: "Fundamentos esenciales de la programación - 2024",
+                                text: "Programming Foundations: Fundamentals - 2021",
                                 link: {
                                     text: "(Ver certificado)",
                                     url: "https://www.linkedin.com/learning/certificates/7f76e5746b15be93a0d5bc9e553e06727631a953121a7693f8c8beed7128a590?trk=share_certificate"
                                 }
                             },
                             { 
-                                text: "Python esencial - 2024",
+                                text: "Scrum Essential Training - 2022",
+                                link: {
+                                    text: "(Ver certificado)",
+                                    url: "https://www.linkedin.com/learning/certificates/6017efb568d9bfc7c363a9df28b3c1a6ebf085d00909f826b76e319c88841e82?trk=share_certificate"
+                                }
+                            },
+                            { 
+                                text: "Python Essential Training - 2022",
                                 link: {
                                     text: "(Ver certificado)",
                                     url: "https://www.linkedin.com/learning/certificates/c8769ed753282a8e3f7583ac029666e62d1f4b764580436d18d786a8277a0fcc?trk=share_certificate"
