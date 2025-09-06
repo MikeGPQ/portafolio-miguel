@@ -89,6 +89,13 @@ export function Sobremi() {
                                 }
                             },
                             { 
+                                text: "Google Gemini for Developers - 2024",
+                                link: {
+                                    text: "(Ver certificado)",
+                                    url: "https://www.linkedin.com/learning/certificates/f33ba2f65c817c29bab05928081bca7a256e813463f3edd237c5cd050b45a2b5?trk=share_certificate"
+                                }
+                            },
+                            { 
                                 text: "Learning Python - 2025",
                                 link: {
                                     text: "(Ver certificado)",
