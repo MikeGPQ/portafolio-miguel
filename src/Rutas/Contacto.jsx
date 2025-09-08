@@ -48,7 +48,7 @@ export function Contacto() {
                         texto="GitHub"
                     />
                     <ButtonRedes
-                        url="https://mx.linkedin.com/in/miguel-garcía-parra-66b733294"
+                        url="https://www.linkedin.com/in/miguel-garc%C3%ADa-parra-66b733294/"
                         texto="LinkedIn"
                     />
                 </div>

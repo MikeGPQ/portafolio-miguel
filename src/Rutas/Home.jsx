@@ -16,6 +16,18 @@ const progressItems = [
       title: "Chatbot",
       type: "project", 
       url:"https://chatbot-mikegpq.netlify.app/"
+    },
+    { 
+      percentage: 0, 
+      title: "Showing Big Data v0.2",
+      type: "project", 
+      url:"https://polarsgraphs.onrender.com"
+    },
+    { 
+      percentage: 0, 
+      title: "Google Cloud Platform for Machine Learning Essential Training",
+      type: "curso", 
+      url:"https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training-23457382?u=89909618"
     }
   ];
 
